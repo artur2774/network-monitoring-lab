@@ -1,13 +1,27 @@
 # Evidências do laboratório
 
-As capturas foram enviadas e conferidas na conversa de implantação. Os arquivos de imagem não estão incorporados a este pacote: a transferência local não pôde ser concluída neste ambiente. Não há links quebrados no README principal.
+Capturas realizadas diretamente no Zabbix em 17/10/2026, após o teste de falha e recuperação.
 
-| Nome sugerido ao adicionar ao repositório | Captura de origem | O que comprova |
+| Arquivo | Evidência | O que comprova |
 |---|---|---|
-| dashboard.png | image(20261017-030047).png ou reenvio image(20261017-030109).png | Gráficos Ubuntu/OPNsense e evento resolvido |
-| falha-recuperacao.png | image(20261017-030015).png | Evento RESOLVED, início 23:53:26 e recuperação 23:58:26 |
-| regra-zabbix-vlan20.png | image(20261017-023702).png | Regra específica acima do bloqueio de redes privadas |
+| dashboard.png | Dashboard | CPU do Ubuntu e OPNsense |
+| falha-recuperacao.png | Histórico | Evento RESOLVED, início 23:53:26 e recuperação 23:58:26 |
+| hosts-disponiveis.png | Hosts | Dois equipamentos com ZBX verde |
 
-Captura adicional ainda não recebida: Monitoring → Hosts com Ubuntu e OPNsense mostrando ZBX verde juntos. A recuperação dos indicadores e a coleta dos dois hosts foram confirmadas durante a execução.
+## Dashboard
+
+![Dashboard de monitoramento](dashboard.png)
+
+O gráfico do Ubuntu mostra uma lacuna durante a parada do agente. O painel de problemas está sem eventos recentes nesta captura; a recuperação está registrada no histórico abaixo.
+
+## Disponibilidade
+
+![Ubuntu e OPNsense com ZBX verde](hosts-disponiveis.png)
+
+## Falha e recuperação
+
+![Histórico do evento resolvido](falha-recuperacao.png)
+
+A regra de firewall está documentada em [Configuração e operação](../docs/configuracao.md).
 
 Não publicar a captura de edição de DBPassword, backups do OPNsense ou telas com chaves e senhas. Ao adicionar imagens, conferir legibilidade e ausência de credenciais.

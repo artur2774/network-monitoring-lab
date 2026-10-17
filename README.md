@@ -66,6 +66,10 @@ O dashboard usa CPU utilization no Ubuntu e CPU user time / CPU system time no O
 
 ## Documentação
 
+![Dashboard de monitoramento](evidencias/dashboard.png)
+
+As [evidências visuais](evidencias/README.md) incluem também os dois hosts com ZBX verde e o histórico do alerta resolvido.
+
 - [Configuração e operação](docs/configuracao.md)
 - [Teste de falha e recuperação](docs/teste-de-falha.md)
 - [Troubleshooting](docs/troubleshooting.md)
