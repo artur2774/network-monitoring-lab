@@ -1,0 +1,19 @@
+# Credenciais e configurações locais
+.env
+.env.*
+!.env.example
+*.key
+*.pem
+*.p12
+*.pfx
+config.xml
+config-*.xml
+zabbix_server.conf
+zabbix.conf.php
+
+# Arquivos temporários
+*.log
+*.tmp
+*.bak
+Thumbs.db
+.DS_Store
